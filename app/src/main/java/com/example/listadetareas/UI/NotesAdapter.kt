@@ -18,6 +18,7 @@ class NotesAdapter(private var notes: List<Note>, context: Context) : RecyclerVi
     private val db: DBconexion = DBconexion(context)
 
 class  NoteViewHolder(itemview: View): RecyclerView.ViewHolder(itemview){
+    val tituloTextView: TextView = itemview.findViewById(R.id.titleTextView)
     val contentTextView: TextView = itemview.findViewById(R.id.contentTextView)
     val updateButton: ImageButton = itemview.findViewById(R.id.ibtnChange)
     val deleteButton: ImageButton = itemview.findViewById(R.id.ibtndelete)
@@ -33,6 +34,7 @@ class  NoteViewHolder(itemview: View): RecyclerView.ViewHolder(itemview){
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
             val note = notes[position]
+        holder.tituloTextView.text = note.titulo
         holder.contentTextView.text = note.content
 
         holder.updateButton.setOnClickListener {

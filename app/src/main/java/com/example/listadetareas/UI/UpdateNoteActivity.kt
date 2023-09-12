@@ -30,11 +30,13 @@ class UpdateNoteActivity : AppCompatActivity() {
         }
 
         val note  = db.getNoteByID(noteId)
+        binding.txtTitulo.setText(note.titulo)
         binding.txtUpdate.setText(note.content)
 
         binding.btnGuardar.setOnClickListener {
+            val newTitulo = binding.txtTitulo.text.toString()
             val newContent = binding.txtUpdate.text.toString()
-            val updateNote = Note(noteId, newContent)
+            val updateNote = Note(noteId, newTitulo, newContent)
             db.updateNotes(updateNote)
             finish()
             Toast.makeText(this,"Cambios Guardados",Toast.LENGTH_SHORT).show()

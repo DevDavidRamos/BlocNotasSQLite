@@ -19,8 +19,9 @@ class AddNoteActivity : AppCompatActivity() {
         db = DBconexion(this)
 
     binding.btnPublicar.setOnClickListener {
+        val titulo = binding.txtTitulo.text.toString()
         val content = binding.txtPost.text.toString()
-        val note = Note(0,content)
+        val note = Note(0,titulo,content)
         db.insertNote(note)
         finish()
         Toast.makeText(this,"Nota guardada",Toast.LENGTH_SHORT).show()
