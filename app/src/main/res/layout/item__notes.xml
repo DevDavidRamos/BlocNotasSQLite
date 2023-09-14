@@ -7,10 +7,9 @@
 
 
     <androidx.cardview.widget.CardView
-        app:cardCornerRadius="4dp"
-        app:cardElevation="4dp"
-        android:outlineSpotShadowColor="@color/black"
-        android:backgroundTint="@color/gris"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="2dp"
+        android:backgroundTint="@color/transpa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,38 +26,39 @@
 
             <ImageButton
                 android:id="@+id/ibtnChange"
-                android:backgroundTint="@color/gris"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="28dp"
                 android:layout_marginBottom="4dp"
                 android:background="@color/white"
+                android:backgroundTint="@color/transpa"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/ibtndelete"
                 app:srcCompat="@drawable/ic_edit_note" />
 
             <ImageButton
                 android:id="@+id/ibtndelete"
-                android:backgroundTint="@color/gris"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="28dp"
                 android:layout_marginBottom="4dp"
                 android:background="@color/white"
+                android:backgroundTint="@color/transpa"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:srcCompat="@drawable/ic_delete_note" />
 
             <TextView
                 android:id="@+id/contentTextView"
-                android:layout_width="351dp"
-                android:layout_height="53dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="365dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="20dp"
                 android:text="Aqui va el post"
                 android:textColor="@color/white"
+                android:textSize="16sp"
                 android:textStyle="italic"
-                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
@@ -66,10 +66,10 @@
                 android:id="@+id/titleTextView"
                 android:layout_width="372dp"
                 android:layout_height="45dp"
-                android:background="@color/gris1"
+
                 android:text="TITULO"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

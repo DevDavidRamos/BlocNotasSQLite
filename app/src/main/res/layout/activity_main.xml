@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gris2"
+    android:background="@color/black"
     tools:context=".UI.MainActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NOTAS"
-        android:textColor="@color/gris1"
+        android:textColor="@color/gris"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

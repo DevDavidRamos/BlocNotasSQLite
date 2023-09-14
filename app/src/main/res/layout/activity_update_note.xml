@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/gris"
     tools:context=".UI.UpdateNoteActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_width="408dp"
+        android:layout_height="605dp"
         android:hint="EDITAR"
         android:textColorHint="@color/black"
         app:boxStrokeColor="@color/black"
@@ -24,18 +24,18 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtUpdate"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="600dp"
+            android:gravity="top"
             android:inputType="text"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
 
         android:hint="Edita Titulo"
         android:textColorHint="@color/black"
@@ -66,9 +66,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.955" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
